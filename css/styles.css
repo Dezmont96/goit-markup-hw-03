@@ -14,16 +14,20 @@ body {
   max-width: 1440px;
 }
 
-.container {
-  max-width: 1128px;
-  padding: 0 15x;
-  margin: 0 auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 ul,
 ol {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -46,10 +50,15 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1158px;
+  padding: 0 15x;
+  margin: 0 auto;
+}
+
 /* #region header */
 header {
   background: #fff;
-  padding: 24px;
 }
 .header-container {
   display: flex;
@@ -59,12 +68,13 @@ header {
 .header-nav-list {
   display: flex;
   gap: 40px;
-  /* padding-right: 156px; */
+  padding: 24px;
 }
 
 .address-nav-list {
   display: flex;
   gap: 40px;
+  padding: 24px;
 }
 
 .header-span {
@@ -91,7 +101,6 @@ header {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
-  /* padding: 72px; */
 }
 .header-nav-item:focus,
 .header-nav-item:hover {
@@ -122,8 +131,9 @@ header {
 /* #region section effective-solutions */
 .effective-solutions {
   background: #2e2f42;
-  height: 600px;
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .effective-h {
   font-family: "Roboto", sans-serif;
@@ -133,7 +143,7 @@ header {
   color: #fff;
   text-align: center;
   letter-spacing: 0.02em;
-  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .order-service-button {
@@ -155,6 +165,11 @@ header {
 /* #endregion section effective-solutions */
 /* #region section advantages */
 
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .advantages ul {
   display: flex;
   justify-content: space-between;
@@ -166,6 +181,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .advantages-p {
@@ -175,6 +191,8 @@ header {
 
 .section-our-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-our-team ul {
   display: flex;
@@ -188,9 +206,13 @@ header {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .our-team-li {
   background-color: #ffffff;
+}
+.our-team-li img {
+  margin-bottom: 32px;
 }
 .our-team-h {
   font-weight: 500;
@@ -198,16 +220,37 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .our-team-p {
   font-size: 16px;
+  text-align: center;
+  padding-bottom: 32px;
 }
 /* #endregion Our Team */
 /* #region Our Portfolio */
+
+.section-our-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-our-portfolio ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.section-our-portfolio li {
+  width: calc((100% - 24px * 2) / 3);
+}
+
+.our-portfolio-list-one li {
+  margin-bottom: 48px;
+}
+.our-portfolio-list-one img {
+  margin-bottom: 38px;
 }
 
 .our-portfolio-header {
@@ -217,6 +260,7 @@ header {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .our-portfolio-h {
   font-weight: 500;
@@ -224,6 +268,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .our-portfolio-p {
   font-size: 16px;
@@ -239,13 +284,19 @@ header {
 /* #region footer */
 .footer {
   background: #2e2f42;
-  height: 312px;
-  padding: 100px 1020px 100px 156px;
 }
+
+.container-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .footer-p {
   color: #f4f4fd;
+  width: 264px;
 }
 .footer-logo {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -254,6 +305,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
+  margin-bottom: 15px;
 }
 .span-studio {
   color: #f4f4fd;
