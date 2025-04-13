@@ -210,10 +210,6 @@ img {
 .section-our-team {
   background-color: #f4f4fd;
 }
-.section-our-team ul {
-  display: flex;
-  justify-content: space-between;
-}
 
 .our-team-header {
   font-size: 36px;
@@ -222,14 +218,29 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-bottom: 72px;
 }
-.our-team-li {
-  background-color: #ffffff;
-  /* width: calc((100% - 24px * 3) / 4); */
+
+.our-team-list {
+  display: flex;
+  gap: 24px;
+  /* justify-content: space-between; */
 }
+
+.our-team-item {
+  background-color: #ffffff;
+  width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-container {
+  padding: 32px 0;
+}
+
 .our-team-li img {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .our-team-h {
   font-weight: 500;
@@ -243,7 +254,7 @@ img {
 .our-team-p {
   font-size: 16px;
   text-align: center;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 }
 /* #endregion Our Team */
 /* #region Our Portfolio */
