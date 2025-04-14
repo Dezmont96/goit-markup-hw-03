@@ -74,13 +74,11 @@ img {
 .header-nav-list {
   display: flex;
   gap: 40px;
-  padding: 24px;
 }
 
 .address-nav-list {
   display: flex;
   gap: 40px;
-  padding: 24px;
 }
 
 .header-span {
@@ -100,6 +98,7 @@ img {
   margin-right: 76px;
 }
 .header-nav-item {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
