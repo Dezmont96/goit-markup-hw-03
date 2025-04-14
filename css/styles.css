@@ -181,7 +181,7 @@ img {
 .advantages {
 }
 
-.visually-item {
+.advantages-item {
   width: calc((100% - 24px * 3) / 4);
 }
 
